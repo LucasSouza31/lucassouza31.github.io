@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>NameYourSon | Minha Lista</title>
+  <title>NameYourSon | Inglês</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet"
@@ -27,8 +27,7 @@
         </li>
         <li class="nav-item d-none d-sm-inline-block">
           <a href="home.html" class="nav-link">Home</a>
-        </li>
-        
+        </li>        
       </ul>
 
       <!-- Right navbar links -->
@@ -39,7 +38,7 @@
             <i class="fas fa-search"></i>
           </a>
           <div class="navbar-search-block">
-            <form class="form-inline" action="busca.html">
+            <form class="form-inline">
               <div class="input-group input-group-sm">
                 <input class="form-control form-control-navbar" type="search" placeholder="Buscar" aria-label="Search">
                 <div class="input-group-append">
@@ -55,7 +54,7 @@
           </div>
         </li>
         <!-- Messages Dropdown Menu -->        
-        
+       
         <li class="nav-item">
           <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
             <i class="fas fa-th-large"></i>
@@ -87,7 +86,16 @@
         </div>
 
         <!-- SidebarSearch Form -->
-        
+        <div class="form-inline">
+          <div class="input-group" data-widget="sidebar-search">
+            <input class="form-control form-control-sidebar" type="search" placeholder="Buscar" aria-label="Search">
+            <div class="input-group-append">
+              <button class="btn btn-sidebar">
+                <i class="fas fa-search fa-fw"></i>
+              </button>
+            </div>
+          </div>
+        </div>
 
         <!-- Sidebar Menu -->
         <nav class="mt-2">
@@ -96,25 +104,25 @@
                with font-awesome or any other icon font library -->
 
      
-         
-            <!--deletado menu lateral-->
+              <!--deletado menu lateral-->
+            
             
              <!--preferencias-->
              <li class="nav-item menu-open">
               <a href="#" class="nav-link active">
                 <i class="nav-icon fas fa-book"></i>
                 <p>
-                  Opções
+                  Mais Opções
                   <i class="fas fa-angle-left right"></i>
                 </p>
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="#" class="nav-link active">
+                  <a href="favoritos.html" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
-                    <p>Minha Lista</p>
+                    <p>Favoritos</p>
                   </a>
-                </li>       
+                </li>               
               
             </li>  
            
@@ -134,7 +142,7 @@
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1>Minha Lista</h1>
+              <h1>Nomes de origem inglesa</h1>
             </div>            
           </div>
         </div><!-- /.container-fluid -->
@@ -161,20 +169,20 @@
             <table class="table table-striped projects">
               <thead>
                 <tr>
-                  <th style="width: 5%">
-                    Ordem
+                  <th style="width: 1%">
+                    #
                   </th>
-                  <th style="width: 5%">
+                  <th style="width: 20%">
                     Nome
                   </th>
-                  <th >
-                    
-                  </th>                  
-                  <th style="width: 10%" class="text-center">
-                    Origem
+                  <th style="width: 30%">
+                    Significado
                   </th>
                   <th>
                     Quantos escolheram
+                  </th>
+                  <th style="width: 8%" class="text-center">
+                    Aceitação
                   </th>
                   <th style="width: 20%">
                   </th>
@@ -183,10 +191,10 @@
               <tbody>
                 <tr>
                   <td>
-                    1.
+                    #
                   </td>
                   <td>
-                    <a href="ingles.html">
+                    <a>
                       Luana
                     </a>
                     <br />                    
@@ -194,14 +202,7 @@
                   <td> <!-- avatar-->
                     <ul class="list-inline">
                       <li class="list-inline-item">
-                     
-                    </ul>
-                  </td>
-                  
-                  <td class="project-state">
-                    <ul class="list-inline">
-                      <li class="list-inline-item">
-                      <p>Inglês</p>
+                      <p>Significa “a reluzente”, “combatente gloriosa cheia de graça”</p>
                     </ul>
                   </td>
                   <td class="project_progress">
@@ -214,6 +215,9 @@
                       57% Gostaram
                     </small>
                   </td>
+                  <td class="project-state">
+                    <span class="badge badge-success">Média</span>
+                  </td>
                   <td class="project-actions text-right">
 
                     <a class="btn btn-danger btn-sm" href="#">
@@ -221,42 +225,65 @@
                       </i>
                       Deletar
                     </a>
-
-                    <a class="btn btn-success btn-sm" href="ingles.html">
-                      <i class="fas fa-xl ">
-                      </i>
-                      Escolher
-                    </a>                      
-
                   </td>
-                  
                 </tr>
                 <tr>
                   <td>
-                    2.
+                    #
                   </td>
                   <td>
-                    <a href="#">
-                      Thamires
+                    <a>
+                      Agatha
                     </a>
                     <br />                    
                   </td>
-                  <td> <!-- avatar-->
+                  <td>
                     <ul class="list-inline">
                       <li class="list-inline-item">
-                      
-                    </ul>
-                  </td>
-                  
-                  <td class="project-state">
-                    <ul class="list-inline">
-                      <li class="list-inline-item">
-                      <p>Árabe</p>
+                      <p>Significa “boa, perfeita, respeitável, virtuosa”</p>
                     </ul>
                   </td>
                   <td class="project_progress">
                     <div class="progress progress-sm">
-                      <div class="progress-bar bg-green" role="progressbar" aria-valuenow="57" aria-valuemin="0"
+                      <div class="progress-bar bg-green" role="progressbar" aria-valuenow="47" aria-valuemin="0"
+                        aria-valuemax="100" style="width: 47%">
+                      </div>
+                    </div>
+                    <small>
+                      47% Gostaram
+                    </small>
+                  </td>
+                  <td class="project-state">
+                    <span class="badge badge-success">Média</span>
+                  </td>
+                  <td class="project-actions text-right">
+
+                    <a class="btn btn-danger btn-sm" href="#">
+                      <i class="fas fa-trash">
+                      </i>
+                      Deletar
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    #
+                  </td>
+                  <td>
+                    <a>
+                      Kira
+                    </a>
+                    <br />                   
+                  </td>
+                  <td>
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                      <p>Significa “senhora”, “que tem plena autoridade”, “feixe de luz”, “preta”</p>
+                    </ul>
+                  </td>
+                  <td class="project_progress">
+                    <div class="progress progress-sm">
+                      <div class="progress-bar bg-green" role="progressbar" aria-valuenow="77" aria-valuemin="0"
                         aria-valuemax="100" style="width: 77%">
                       </div>
                     </div>
@@ -264,6 +291,46 @@
                       77% Gostaram
                     </small>
                   </td>
+                  <td class="project-state">
+                    <span class="badge badge-success">Alta</span>
+                  </td>
+                  <td class="project-actions text-right">
+                    <a class="btn btn-danger btn-sm" href="#">
+                      <i class="fas fa-trash">
+                      </i>
+                      Deletar
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    #
+                  </td>
+                  <td>
+                    <a>
+                      Isaac
+                    </a>
+                    <br />                    
+                  </td>
+                  <td>
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                        <p>Significa "ele irá rir”, "como Deus ri!" e "filho da alegria"</p>
+                    </ul>
+                  </td>
+                  <td class="project_progress">
+                    <div class="progress progress-sm">
+                      <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                        aria-valuemax="100" style="width: 60%">
+                      </div>
+                    </div>
+                    <small>
+                      60% Gostaram
+                    </small>
+                  </td>
+                  <td class="project-state">
+                    <span class="badge badge-success">Média</span>
+                  </td>
                   <td class="project-actions text-right">
 
                     <a class="btn btn-danger btn-sm" href="#">
@@ -271,41 +338,99 @@
                       </i>
                       Deletar
                     </a>
-
-                    <a class="btn btn-success btn-sm" href="favoritos.html">
-                      <i class="fas fa-xl ">
-                      </i>
-                      Escolher
-                    </a>  
                   </td>
-
                 </tr>
                 <tr>
                   <td>
-                    3.
+                    #
                   </td>
                   <td>
-                    <a href="#">
-                      Hugo
+                    <a>
+                      Jennifer
                     </a>
                     <br />                    
                   </td>
-                  <td> <!-- avatar-->
+                  <td>
                     <ul class="list-inline">
                       <li class="list-inline-item">
-                      
-                    </ul>
-                  </td>
-                  
-                  <td class="project-state">
-                    <ul class="list-inline">
-                      <li class="list-inline-item">
-                      <p>Alemão</p>
+                      <p>Significa "espírito branco", "onda branca"; "branca e suave"</p>
                     </ul>
                   </td>
                   <td class="project_progress">
                     <div class="progress progress-sm">
-                      <div class="progress-bar bg-green" role="progressbar" aria-valuenow="57" aria-valuemin="0"
+                      <div class="progress-bar bg-green" role="progressbar" aria-valuenow="12" aria-valuemin="0"
+                        aria-valuemax="100" style="width: 72%">
+                      </div>
+                    </div>
+                    <small>
+                      72% Gostaram
+                    </small>
+                  </td>
+                  <td class="project-state">
+                    <span class="badge badge-success">Alta</span>
+                  </td>
+                  <td class="project-actions text-right">
+                    <a class="btn btn-danger btn-sm" href="#">
+                      <i class="fas fa-trash">
+                      </i>
+                      Deletar
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    #
+                  </td>
+                  <td>
+                    <a>
+                      Nathan
+                    </a>
+                    <br />                   
+                  </td>
+                  <td>
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                      <p>Significa "dádiva", "presente", "dom"</p>
+                    </ul>
+                  </td>
+                  <td class="project_progress">
+                    <div class="progress progress-sm">
+                      <div class="progress-bar bg-green" role="progressbar" aria-valuenow="35" aria-valuemin="0"
+                        aria-valuemax="100" style="width: 35%">
+                      </div>
+                    </div>
+                    <small>
+                      35% Gostaram
+                    </small>
+                  </td>
+                  <td class="project-state">
+                    <span class="badge badge-success">Baixa</span>
+                  </td>
+                  <td class="project-actions text-right">
+                    <a class="btn btn-danger btn-sm" href="#">
+                      <i class="fas fa-trash">
+                      </i>
+                      Deletar
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    #
+                  </td>
+                  <td>
+                    <a>
+                      Dominic
+                    </a>
+                    <br />                   
+                  </td>
+                  <td>
+                    <ul class="list-inline">
+                     <p>Significa “do Senhor”, “o que pertence ao Senhor”</p>
+                  </td>
+                  <td class="project_progress">
+                    <div class="progress progress-sm">
+                      <div class="progress-bar bg-green" role="progressbar" aria-valuenow="87" aria-valuemin="0"
                         aria-valuemax="100" style="width: 87%">
                       </div>
                     </div>
@@ -313,25 +438,20 @@
                       87% Gostaram
                     </small>
                   </td>
+                  <td class="project-state">
+                    <span class="badge badge-success">Alta</span>
+                  </td>
                   <td class="project-actions text-right">
-
                     <a class="btn btn-danger btn-sm" href="#">
                       <i class="fas fa-trash">
                       </i>
                       Deletar
                     </a>
-                    <a class="btn btn-success btn-sm" href="favoritos.html">
-                      <i class="fas fa-xl ">
-                      </i>
-                      Escolher
-                    </a>  
-
                   </td>
-                </tr  
-              </tbody>             
+                </tr>
+                </tr>
+              </tbody>
             </table>
-
-            
           </div>
           <!-- /.card-body -->
         </div>
