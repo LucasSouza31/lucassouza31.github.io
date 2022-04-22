@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>NameYourSon | Principal</title>
+  <title>NameYourSon | Minha Lista</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet"
@@ -26,8 +26,9 @@
           <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
-          <a href="#" class="nav-link">Home</a>
-        </li>        
+          <a href="home.html" class="nav-link">Home</a>
+        </li>
+        
       </ul>
 
       <!-- Right navbar links -->
@@ -38,7 +39,7 @@
             <i class="fas fa-search"></i>
           </a>
           <div class="navbar-search-block">
-            <form class="form-inline">
+            <form class="form-inline" action="busca.html">
               <div class="input-group input-group-sm">
                 <input class="form-control form-control-navbar" type="search" placeholder="Buscar" aria-label="Search">
                 <div class="input-group-append">
@@ -53,7 +54,8 @@
             </form>
           </div>
         </li>
-
+        <!-- Messages Dropdown Menu -->        
+        
         <li class="nav-item">
           <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
             <i class="fas fa-th-large"></i>
@@ -101,9 +103,13 @@
           <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
             <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
+
+     
+         
+            <!--deletado menu lateral-->
             
-            <!--preferencias-->
-            <li class="nav-item menu-open">
+             <!--preferencias-->
+             <li class="nav-item menu-open">
               <a href="#" class="nav-link active">
                 <i class="nav-icon fas fa-book"></i>
                 <p>
@@ -113,13 +119,13 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="favoritos.html" class="nav-link">
+                  <a href="#" class="nav-link active">
                     <i class="far fa-circle nav-icon"></i>
-                    <p>Favoritos</p>
+                    <p>Minha Lista</p>
                   </a>
-                </li>                
+                </li>       
               
-            </li>                    
+            </li>  
            
                               
           </ul>
@@ -137,7 +143,7 @@
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1>Lista de Nomes</h1>
+              <h1>Minha Lista</h1>
             </div>            
           </div>
         </div><!-- /.container-fluid -->
@@ -171,12 +177,13 @@
                     Nome
                   </th>
                   <th style="width: 30%">
-                    Membros
+                    Significado
+                  </th>                  
+                  <th style="width: 8%" class="text-center">
+                    Origem
                   </th>
                   <th>
                     Quantos escolheram
-                  </th>
-                  <th style="width: 8%" class="text-center">                   
                   </th>
                   <th style="width: 20%">
                   </th>
@@ -189,27 +196,21 @@
                   </td>
                   <td>
                     <a>
-                      Nomes de origem alemã
+                      Luana
                     </a>
-                    <br />
-                    <small>
-                      Created 01.01.2019
-                    </small>
+                    <br />                    
                   </td>
-                  <td>
+                  <td> <!-- avatar-->
                     <ul class="list-inline">
                       <li class="list-inline-item">
-                        <img alt="Avatar" class="table-avatar" src="../dist/img/avatar.png">
-                      </li>
+                      <p>Significa “a reluzente”, “combatente gloriosa cheia de graça”</p>
+                    </ul>
+                  </td>
+                  
+                  <td class="project-state">
+                    <ul class="list-inline">
                       <li class="list-inline-item">
-                        <img alt="Avatar" class="table-avatar" src="../dist/img/avatar2.png">
-                      </li>
-                      <li class="list-inline-item">
-                        <img alt="Avatar" class="table-avatar" src="../dist/img/avatar3.png">
-                      </li>
-                      <li class="list-inline-item">
-                        <img alt="Avatar" class="table-avatar" src="../dist/img/avatar4.png">
-                      </li>
+                      <p>Inglês</p>
                     </ul>
                   </td>
                   <td class="project_progress">
@@ -222,16 +223,12 @@
                       57% Gostaram
                     </small>
                   </td>
-
-                  <td class="project-state">                    
-                  </td>
-
                   <td class="project-actions text-right">
 
-                    <a class="btn btn-success btn-sm" href="alemao.html">
-                      <i class="fas">
+                    <a class="btn btn-danger btn-sm" href="#">
+                      <i class="fas fa-trash">
                       </i>
-                      Acessar
+                      Deletar
                     </a>
                   </td>
                 </tr>
@@ -241,74 +238,26 @@
                   </td>
                   <td>
                     <a>
-                     Nomes de origem inglesa
+                      Thamires
                     </a>
-                    <br />
-                    <small>
-                      Created 01.01.2019
-                    </small>
+                    <br />                    
                   </td>
-                  <td>
+                  <td> <!-- avatar-->
                     <ul class="list-inline">
                       <li class="list-inline-item">
-                        <img alt="Avatar" class="table-avatar" src="../dist/img/avatar.png">
-                      </li>
+                      <p>Significa rica em tâmaras ou aquela que é alta</p>
+                    </ul>
+                  </td>
+                  
+                  <td class="project-state">
+                    <ul class="list-inline">
                       <li class="list-inline-item">
-                        <img alt="Avatar" class="table-avatar" src="../dist/img/avatar2.png">
-                      </li>
+                      <p>Árabe</p>
                     </ul>
                   </td>
                   <td class="project_progress">
                     <div class="progress progress-sm">
-                      <div class="progress-bar bg-green" role="progressbar" aria-valuenow="47" aria-valuemin="0"
-                        aria-valuemax="100" style="width: 47%">
-                      </div>
-                    </div>
-                    <small>
-                      47% Gostaram
-                    </small>
-                  </td>
-                  <td class="project-state">                    
-                  </td>
-
-                  <td class="project-actions text-right">
-
-                    <a class="btn btn-success btn-sm" href="ingles.html">
-                      <i class="fas">
-                      </i>
-                      Acessar
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    #
-                  </td>
-                  <td>
-                    <a>
-                      Nomes de origem árabe
-                    </a>
-                    <br />
-                    <small>
-                      Created 01.01.2019
-                    </small>
-                  </td>
-                  <td>
-                    <ul class="list-inline">
-                      <li class="list-inline-item">
-                        <img alt="Avatar" class="table-avatar" src="../dist/img/avatar.png">
-                      </li>
-                      <li class="list-inline-item">
-                        <img alt="Avatar" class="table-avatar" src="../dist/img/avatar2.png">
-                      </li>
-                      <li class="list-inline-item">
-                        <img alt="Avatar" class="table-avatar" src="../dist/img/avatar3.png">
-                      </li>
-                    </ul>
-                  </td>
-                  <td class="project_progress">
-                    <div class="progress progress-sm">
-                      <div class="progress-bar bg-green" role="progressbar" aria-valuenow="77" aria-valuemin="0"
+                      <div class="progress-bar bg-green" role="progressbar" aria-valuenow="57" aria-valuemin="0"
                         aria-valuemax="100" style="width: 77%">
                       </div>
                     </div>
@@ -316,15 +265,12 @@
                       77% Gostaram
                     </small>
                   </td>
-
-                  <td class="project-state">                    
-                  </td>
-
                   <td class="project-actions text-right">
-                    <a class="btn btn-success btn-sm" href="arabe.html">
-                      <i class="fas">
+
+                    <a class="btn btn-danger btn-sm" href="#">
+                      <i class="fas fa-trash">
                       </i>
-                      Acessar
+                      Deletar
                     </a>
                   </td>
                 </tr>
@@ -334,177 +280,26 @@
                   </td>
                   <td>
                     <a>
-                      Manuela
+                      Hugo
                     </a>
-                    <br />
-                    <small>
-                      Created 01.01.2019
-                    </small>
+                    <br />                    
                   </td>
-                  <td>
+                  <td> <!-- avatar-->
                     <ul class="list-inline">
                       <li class="list-inline-item">
-                        <img alt="Avatar" class="table-avatar" src="../dist/img/avatar.png">
-                      </li>
+                      <p>Significa "o pensador"</p>
+                    </ul>
+                  </td>
+                  
+                  <td class="project-state">
+                    <ul class="list-inline">
                       <li class="list-inline-item">
-                        <img alt="Avatar" class="table-avatar" src="../dist/img/avatar2.png">
-                      </li>
-                      <li class="list-inline-item">
-                        <img alt="Avatar" class="table-avatar" src="../dist/img/avatar3.png">
-                      </li>
-                      <li class="list-inline-item">
-                        <img alt="Avatar" class="table-avatar" src="../dist/img/avatar4.png">
-                      </li>
+                      <p>Alemão</p>
                     </ul>
                   </td>
                   <td class="project_progress">
                     <div class="progress progress-sm">
-                      <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                        aria-valuemax="100" style="width: 60%">
-                      </div>
-                    </div>
-                    <small>
-                      60% Gostaram
-                    </small>
-                  </td>
-
-                  <td class="project-state">                    
-                  </td>
-
-                  <td class="project-actions text-right">
-
-                    <a class="btn btn-success btn-sm" href="#">
-                      <i class="fas">
-                      </i>
-                      Acessar
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    #
-                  </td>
-                  <td>
-                    <a>
-                      Jair
-                    </a>
-                    <br />
-                    <small>
-                      Created 01.01.2019
-                    </small>
-                  </td>
-                  <td>
-                    <ul class="list-inline">
-                      <li class="list-inline-item">
-                        <img alt="Avatar" class="table-avatar" src="../dist/img/avatar.png">
-                      </li>
-                      <li class="list-inline-item">
-                        <img alt="Avatar" class="table-avatar" src="../dist/img/avatar4.png">
-                      </li>
-                      <li class="list-inline-item">
-                        <img alt="Avatar" class="table-avatar" src="../dist/img/avatar5.png">
-                      </li>
-                    </ul>
-                  </td>
-                  <td class="project_progress">
-                    <div class="progress progress-sm">
-                      <div class="progress-bar bg-red" role="progressbar" aria-valuenow="12" aria-valuemin="0"
-                        aria-valuemax="100" style="width: 12%">
-                      </div>
-                    </div>
-                    <small>
-                      12% Gostaram
-                    </small>
-                  </td>
-
-                  <td class="project-state">                    
-                  </td>
-
-                  <td class="project-actions text-right">
-                    <a class="btn btn-success btn-sm" href="#">
-                      <i class="fas">
-                      </i>
-                      Acessar
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    #
-                  </td>
-                  <td>
-                    <a>
-                      Anita
-                    </a>
-                    <br />
-                    <small>
-                      Created 01.01.2019
-                    </small>
-                  </td>
-                  <td>
-                    <ul class="list-inline">
-                      <li class="list-inline-item">
-                        <img alt="Avatar" class="table-avatar" src="../dist/img/avatar.png">
-                      </li>
-                      <li class="list-inline-item">
-                        <img alt="Avatar" class="table-avatar" src="../dist/img/avatar2.png">
-                      </li>
-                      <li class="list-inline-item">
-                        <img alt="Avatar" class="table-avatar" src="../dist/img/avatar3.png">
-                      </li>
-                      <li class="list-inline-item">
-                        <img alt="Avatar" class="table-avatar" src="../dist/img/avatar4.png">
-                      </li>
-                    </ul>
-                  </td>
-                  <td class="project_progress">
-                    <div class="progress progress-sm">
-                      <div class="progress-bar bg-green" role="progressbar" aria-valuenow="35" aria-valuemin="0"
-                        aria-valuemax="100" style="width: 35%">
-                      </div>
-                    </div>
-                    <small>
-                      35% Gostaram
-                    </small>
-                  </td>
-
-                  <td class="project-state">                    
-                  </td>
-
-                  <td class="project-actions text-right">
-                    <a class="btn btn-success btn-sm" href="#">
-                      <i class="fas">
-                      </i>
-                      Acessar
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    #
-                  </td>
-                  <td>
-                    <a>
-                      Eduardo
-                    </a>
-                    <br />
-                    <small>
-                      Created 01.01.2019
-                    </small>
-                  </td>
-                  <td>
-                    <ul class="list-inline">
-                      <li class="list-inline-item">
-                        <img alt="Avatar" class="table-avatar" src="../dist/img/avatar4.png">
-                      </li>
-                      <li class="list-inline-item">
-                        <img alt="Avatar" class="table-avatar" src="../dist/img/avatar5.png">
-                      </li>
-                    </ul>
-                  </td>
-                  <td class="project_progress">
-                    <div class="progress progress-sm">
-                      <div class="progress-bar bg-green" role="progressbar" aria-valuenow="87" aria-valuemin="0"
+                      <div class="progress-bar bg-green" role="progressbar" aria-valuenow="57" aria-valuemin="0"
                         aria-valuemax="100" style="width: 87%">
                       </div>
                     </div>
@@ -512,20 +307,16 @@
                       87% Gostaram
                     </small>
                   </td>
-
-                  <td class="project-state">                    
-                  </td>
-
                   <td class="project-actions text-right">
-                    <a class="btn btn-success btn-sm" href="#">
-                      <i class="fas">
+
+                    <a class="btn btn-danger btn-sm" href="#">
+                      <i class="fas fa-trash">
                       </i>
-                      Acessar
-                    </a>                  
-                    
+                      Deletar
+                    </a>
                   </td>
                 </tr>
-                </tr>
+                
               </tbody>
             </table>
           </div>
@@ -558,7 +349,9 @@
   <!-- Bootstrap 4 -->
   <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
   <!-- AdminLTE App -->
-  <script src="../dist/js/adminlte.min.js"></script>  
+  <script src="../dist/js/adminlte.min.js"></script>
+  <!-- AdminLTE for demo purposes -->
+  
 </body>
 
 </html>
