@@ -9,7 +9,13 @@ Definir uma interface para criar um objeto, mas deixar as subclasses decidirem q
 1. Escalar a aplicação encapsulando a criação de objetos em uma classe separada. Permite que a lógica de criação seja alterada sem afetar o restante do código;
 2. Utilizado em situações em que a criação de objetos é complexa ou pode mudar com o tempo;
 
-![Isso é Lógico](img/Factory.png)
+## Estrutura
+
+![FactoryMethod](img/Factory.png)
+
+## Participantes
+
+**Bola** define uma interface, a ser implementada nos produtos que serão gerados, sendo **BolaDeFutebol** e **BolaDeBasquete** os produtos. **Criador** é uma classe abstrata,que define um comportamento cuja intenção é criar um novo objeto do tipo **Bola**, esta classe é estendida por **CriadorBolaFutebol** e **CriadorBolaBasquete**, ambas têm um método herdado de **Criador** cujo retorno será um objeto do tipo **BolaDeFutebol** e **BolaDeBasquete**, respectivamente.
 
 ## Aplicabilidade
 
