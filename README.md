@@ -41,5 +41,5 @@ Use o padrão Factory Method quando:
 
 ‌- Gamma, E., Helm, R., Johnson, R., & Vlissides, J. (1994). Design Patterns: Elements of Reusable Object-Oriented Software. Addison-Wesley.
 
--Factory Method. Disponível em: <https://refactoring.guru/pt-br/design-patterns/factory-method>.
+- Factory Method. Disponível em: <https://refactoring.guru/pt-br/design-patterns/factory-method>.
 ‌
