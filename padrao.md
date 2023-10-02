@@ -6,8 +6,10 @@ Definir uma interface para criar um objeto, mas deixar as subclasses decidirem q
 
 ## Motivação
 
-1.Escalar a aplicação encapsulando a criação de objetos em uma classe separada. Permite que a lógica de criação seja alterada sem afetar o restante do código;
-2.Utilizado em situações em que a criação de objetos é complexa ou pode mudar com o tempo;
+1. Escalar a aplicação encapsulando a criação de objetos em uma classe separada. Permite que a lógica de criação seja alterada sem afetar o restante do código;
+2. Utilizado em situações em que a criação de objetos é complexa ou pode mudar com o tempo;
+
+![Isso é Lógico](img/Factory.png)
 
 ## Aplicabilidade
 
