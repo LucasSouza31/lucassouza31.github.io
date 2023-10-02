@@ -19,10 +19,57 @@ Definir uma interface para criar um objeto, mas deixar as subclasses decidirem q
 
 ## Exemplo de código
 
-```codigo
+```java
 public interface Bola {
     void exibirDetalhes();
 }
+
+public class BolaDeBasquete implements Bola {
+    
+    private String marca;
+    private String nivel;
+    private int circunferenciaMin;
+    private int peso;
+   
+    @Override
+    public void exibirDetalhes() {
+        // detalhes
+    }
+
+}
+
+public class BolaDeFutebol implements Bola {
+
+    private String marca;
+    private String nivel;
+    private int circunferenciaMin;
+    private int peso;
+
+    @Override
+    public void exibirDetalhes() {
+        // detalhes
+    }
+    
+}
+
+public abstract class Criador  {
+    public abstract Bola criarBola();
+}
+
+public class CriadorBolaFutebol extends Criador{
+    @Override
+    public Bola criarBola() {
+        return new BolaDeFutebol();
+    }    
+}
+
+public class CriadorBolaBasquete extends Criador{
+    @Override
+    public Bola criarBola() {
+        return new BolaDeBasquete();
+    }    
+}
+
 ```
 
 ## Aplicabilidade
