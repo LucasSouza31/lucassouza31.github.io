@@ -70,6 +70,18 @@ public class CriadorBolaBasquete extends Criador{
     }    
 }
 
+public class Principal {
+    public static void main(String[] args) {
+        Criador basquete= new CriadorBolaBasquete(); 
+        Criador futebol= new CriadorBolaFutebol();
+
+        Bola bolaBasquete = basquete.criarBola();
+        Bola bolaFutebol= futebol.criarBola();
+        
+        bolaBasquete.exibirDetalhes();
+        bolaFutebol.exibirDetalhes();
+    }
+}
 ```
 
 ## Aplicabilidade
