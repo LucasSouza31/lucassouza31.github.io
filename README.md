@@ -8,6 +8,7 @@ Definir uma interface para criar um objeto, mas deixar as subclasses decidirem q
 
 1. Escalar a aplicação encapsulando a criação de objetos em uma classe separada. Permite que a lógica de criação seja alterada sem afetar o restante do código;
 2. Utilizado em situações em que a criação de objetos é complexa ou pode mudar com o tempo;
+3. Economizar recursos do sistema reutilizando objetos existentes em vez de recriá-los sempre;
 
 ## Estrutura
 
@@ -89,8 +90,18 @@ public class Principal {
 Use o padrão Factory Method quando:
 
 1. uma classe não pode antecipar a classe de objetos que deve criar;
-2. uma classe quer que as subclasses especifiquem is objetos que cria;
+2. uma classe quer que as subclasses especifiquem os objetos que criam;
 3. classes delegam responsabilidade para uma dentre várias subclasses auxiliares, e você que localizar o conhecimento de qual subclasse auxiliar que é a delegada;
+
+## Como implementar
+
+1. Todos os produtos precisam implementar a mesma interface, nela deve ser declarado todos os métodos que fazem sentido para todos os produtos;
+
+2. É necessário adicionar um método *fábrica vazio* na classe *criadora*, o tipo de retorno desse método deve corresponder à interface comum implementado pelos produtos;
+
+3. Na classe *criadora*, substitua todas as referências aos construtores de *produtos* por chamadas ao método fábrica;
+
+4. Crie um conjunto de subclasses criadoras para cada produto listado no método fábrica. Sobrescreva o método fábrica nas subclasses e adapte para que atenda o que a subclasse propõe.
 
 ## Referências
 
