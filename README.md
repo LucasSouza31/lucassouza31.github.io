@@ -14,6 +14,7 @@ O padrão Factory Method oferece uma solução. Ele encapsula o conhecimento sob
 ![FactoryMethod](img/FactoryGof.png)
 
 As subclasses de Apllication redefinem uma operação abstrata CreateDocument em Application para retornar a subclasse apropriada de Document. Uma vez que a subclasse de Application é instanciada, pode então instanciar Documents específicos da aplicação sem conhecer suas classes. Chamamos de CreateDocument um **factory method** porque ele é resonsávek pela "manufatura" de um objeto.
+
 ## Estrutura
 
 ![FactoryMethod](img/modelagemFM.png)
