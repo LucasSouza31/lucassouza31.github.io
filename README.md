@@ -12,7 +12,7 @@ Definir uma interface para criar um objeto, mas deixar as subclasses decidirem q
 
 ## Estrutura
 
-![FactoryMethod](img/Factory.png)
+![FactoryMethod](img/modelagemFM.png)
 
 ## Participantes
 
@@ -21,68 +21,126 @@ Definir uma interface para criar um objeto, mas deixar as subclasses decidirem q
 ## Exemplo de código
 
 ```java
-public interface Bola {
-    void exibirDetalhes();
+public interface Ball {
+    void showDetails();
 }
 
-public class BolaDeBasquete implements Bola {
-    
-    private String marca;
-    private String nivel;
-    private int circunferenciaMin;
-    private int peso;
-   
-    @Override
-    public void exibirDetalhes() {
-        // detalhes
-    }
 
-}
-
-public class BolaDeFutebol implements Bola {
+public class BasketBall implements Ball {
 
     private String marca;
     private String nivel;
     private int circunferenciaMin;
     private int peso;
+  
+    @Override
+    public void showDetails() {
+        System.out.println("Bola de basquete criada!");
+    }
+
+    //getters and setters
+
+}
+
+
+public class SoccerBall implements Ball {
+
+    private String marca;
+    private String nivel;
+    private int circunferenciaMin;
+    private int peso;
 
     @Override
-    public void exibirDetalhes() {
-        // detalhes
+    public void showDetails() {
+        System.out.println("Marca: "+ this.marca);
+        System.out.println("Nível: "+this.nivel);
+        System.out.println("Circunferência: "+this.circunferenciaMin);
+        System.out.println("Peso: "+this.peso);
+    }
+
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public String getNivel() {
+        return nivel;
+    }
+
+    public void setNivel(String nivel) {
+        this.nivel = nivel;
+    }
+
+    public int getCircunferenciaMin() {
+        return circunferenciaMin;
+    }
+
+    public void setCircunferenciaMin(int circunferenciaMin) {
+        this.circunferenciaMin = circunferenciaMin;
+    }
+
+    public int getPeso() {
+        return peso;
+    }
+
+    public void setPeso(int peso) {
+        this.peso = peso;
     }
     
 }
 
-public abstract class Criador  {
-    public abstract Bola criarBola();
+public abstract class MultiSportCourt  {
+    public abstract Ball createBall();
+
+    public void bolaGerada(){
+        System.out.println("Bola criada");
+    }
 }
 
-public class CriadorBolaFutebol extends Criador{
+
+public class SoccerBallCreator extends MultiSportCourt{
+
     @Override
-    public Bola criarBola() {
-        return new BolaDeFutebol();
-    }    
+    public Ball createBall() {
+        return new SoccerBall();
+    }
+    
+    public void bolaGerada(){
+        System.out.println("Bola em quadra!");
+    }
 }
 
-public class CriadorBolaBasquete extends Criador{
+
+public class BasketBallCreator extends MultiSportCourt {
+
     @Override
-    public Bola criarBola() {
-        return new BolaDeBasquete();
+    public Ball createBall() {
+        return new BasketBall();
     }    
 }
 
 public class Principal {
     public static void main(String[] args) {
-        Criador basquete= new CriadorBolaBasquete(); 
-        Criador futebol= new CriadorBolaFutebol();
+       
+        MultiSportCourt bolaDeFutebol= new SoccerBallCreator();
 
-        Bola bolaBasquete = basquete.criarBola();
-        Bola bolaFutebol= futebol.criarBola();
-        
-        bolaBasquete.exibirDetalhes();
-        bolaFutebol.exibirDetalhes();
+        SoccerBall bola = (SoccerBall) bolaDeFutebol.createBall();   
+
+        bola.setMarca("Addidas");
+        bola.setNivel("Amador");
+        bola.setCircunferenciaMin(75);
+        bola.setPeso(700);
+
+        bola.showDetails();
+        bolaDeFutebol.bolaGerada();
+    
     }
 }
+
 ```
 
 ## Aplicabilidade
