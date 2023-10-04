@@ -1,0 +1,63 @@
+@startuml
+interface Ball{
+showDetails()
+}
+
+class SoccerBall implements Ball{
+showDetails()
+}
+
+class BasketBall implements Ball{
+showDetails()
+}
+
+abstract class MultiSportCourt{
+abstract Ball createBall()
+void getball()
+}
+
+MultiSportCourt-left->Ball
+
+class CreatorSoccerBall extends MultiSportCourt{
+abstract Ball createBall()
+}
+
+class CreatorBasketBall extends MultiSportCourt{
+abstract Ball createBall()
+}
+ 
+SoccerBall<--CreatorSoccerBall
+BasketBall<-- CreatorBasketBall 
+
+@enduml
+
+// modelagem do livro GOF
+@startuml
+
+abstract class Document{
+Open()
+Close()
+Save()
+Revert()
+}
+
+abstract class Application{
+CreateDocument()
+NewDocument()
+OpenDocument()
+}
+
+class MyDocument extends Document
+
+class MyApplication extends Application{
+CreateDocument()
+}
+
+Application o- Document
+MyApplication -right-> MyDocument
+
+note left of MyApplication::"CreateDocument()"
+retorna um novo "MyDocument"
+end note
+
+@enduml

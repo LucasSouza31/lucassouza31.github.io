@@ -6,10 +6,14 @@ Definir uma interface para criar um objeto, mas deixar as subclasses decidirem q
 
 ## Motivação
 
-1. Escalar a aplicação encapsulando a criação de objetos em uma classe separada. Permite que a lógica de criação seja alterada sem afetar o restante do código;
-2. Utilizado em situações em que a criação de objetos é complexa ou pode mudar com o tempo;
-3. Economizar recursos do sistema reutilizando objetos existentes em vez de recriá-los sempre;
+Os *frameworks* usam classes abstratas para definir e manter relacionamentos entre objetos. Um *framework* é frequentemente responsável também pela criação desses objetos.
+Considere um *framework* para aplicações que podem apresentar múltiplos documentos para o usuário. Duas abstrações-chave nesse *framework* são classes Appliclation(aplicação) e Document(documento). **As duas classes são abstratas**, e os clientes devem prover subclasses para realizar suas implementações específicas para a aplicação. Por exemplo, para criar uma aplicação de desenho, definimos as classes DrawingAplication e DrawingDocument. **A classe Applicarion é responsável pela administração de Documents e irá criá-los conforme exigido**- quando o usuário seleciona Open(abrir)ou New(novo), por exemplo, num menu.
+Uma vez que a subclasse Document a ser instaciada é a própria da aplicação específica, **a classe Applicarion não pode prever a subclasse de Document a ser instanciada**- a classe Application somente sabe *quando* um documento deve ser criado, e não *que tipo* de Document criar. Isso cria um dilema: o *framework* deve instaciar classes, mas ele somente tem conhecimento de classes abstratas, as quais não pode instanciar.
+O padrão Factory Method oferece uma solução. Ele encapsula o conhecimento sobre a subclasse de Document que deve ser criada e move este conhecimento para fora do *framework*.
 
+![FactoryMethod](img/FactoryGof.png)
+
+As subclasses de Apllication redefinem uma operação abstrata CreateDocument em Application para retornar a subclasse apropriada de Document. Uma vez que a subclasse de Application é instanciada, oide então instanciar Documents específicos da aplicação sem conhecer suas classes. Chamamos de CreateDocument um **factory method** porque ele é resonsávek pela "manufatura" de um objeto.
 ## Estrutura
 
 ![FactoryMethod](img/modelagemFM.png)
